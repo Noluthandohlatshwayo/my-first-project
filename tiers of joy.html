@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TIERS OF JOY</title>
+    <style>
+      body {
+        text-align: center;
+        margin: 0 auto;
+        padding: 0;
+        background: linear-gradient(
+          109.6deg,
+          rgb(204, 228, 247) 11.2%,
+          rgb(237, 246, 250) 100.2%
+        );
+      }
+      .container {
+        max-width: 800px;
+        margin: auto;
+        padding: 20px;
+        background: linear-gradient(
+          109.6deg,
+          rgb(204, 228, 247) 11.2%,
+          rgb(237, 246, 250) 100.2%
+        );
+        box-shadow: 0 0 10px #66c4e0;
+      }
+      h1 {
+        color: #77529e;
+      }
+      h2 {
+        color: #77529e;
+      }
+      img {
+        width: 100%;
+        max-width: 300px;
+        display: block;
+        margin: 0 auto;
+        height: auto;
+      }
+      p {
+        text-align: left;
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+      }
+      a {
+        font-size: 18px;
+        text-decoration: none;
+        color: rgb(7, 132, 190);
+        text-align: left;
+      }
+      a:hover {
+        text-decoration: underline;
+      }
+      .left-align {
+        text-align: left;
+        display: block;
+        margin: 0;
+      }
+
+      button {
+        display: block;
+        margin: 20px auto;
+        background: #77529e;
+        color: #dcb5ff;
+        font-size: 18px;
+        padding: 15px 20px;
+        border: none;
+        border-radius: 6px;
+        box-shadow: 5px 5px 10px #a5bdfd;
+        transition: all 200ms ease-in-out;
+      }
+      button:hover {
+        color: #77529e;
+        background: #dcb5ff;
+      }
+      .left-align {
+        text-align: left;
+        display: block;
+        margin: 0;
+      }
+      .footer {
+        text-align: center;
+        color: rgb(7, 132, 190);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Tiers Of Joy</h1>
+      <h2><em>Looks like art,tastes like dessert</em></h2>
+      <img
+        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/134/489/original/a3b9046499572d1783f16899f7861251.jpg?1721487890"
+        alt="birthday image_cake"
+      />
+      <hr />
+      <p>
+        <span style="color: #77529e">
+          Cakes are delightful confections enjoyed across the globe, celebrated
+          for their versatility and delectable flavors. Whether it's a classic
+          vanilla sponge, a rich chocolate layer cake, or a vibrant red velvet,
+          cakes have a unique way of bringing joy to any occasion. They are
+          often adorned with various icings, fondants, and decorations,
+          transforming them into edible works of art that can be customized for
+          birthdays, weddings, and other celebrations. Ultimately, cakes
+          symbolize celebration, creativity, and the joy of sharing sweet
+          moments with loved ones.</span
+        >
+      </p>
+      <a href="https://en.wikipedia.org/wiki/Cake" class="left-align"
+        >Learn more</a
+      >
+      <br />
+      <button class="contact-button">Contact Us</button>
+      <p class="footer">Coded by Noluthando</p>
+    </div>
+    <script>
+      function contact() {
+        let name = prompt("What is your name?");
+        let email = prompt("What is your email address?");
+        let flavor = prompt("What is your favourite flavor?");
+
+        alert(
+          "Hi " + name + "! Thank you for contacting us. We'll be in touch."
+        );
+      }
+      let contactButton = document.querySelector(".contact-button");
+      contactButton.addEventListener("click", contact);
+    </script>
+  </body>
+</html>
